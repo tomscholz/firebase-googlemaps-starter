@@ -1,0 +1,25 @@
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+#map {
+    height: 100%
+}
+
+#divControls {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    border: 2px solid #a1a1a1;
+    *border-radius: 25px;
+    margin: 10px;
+    padding: 5px;
+    background-color: White;
+}

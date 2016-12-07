@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Map Something Together</Title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/css/master.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script type="text/javascript">
+        var config = {
+            apiKey: "AIzaSyDSmPDhzyJ_FgQkR0Wt1fluCcxaQVk_rr8",
+            authDomain: "maptogether-4ca9a.firebaseapp.com",
+            databaseURL: "https://maptogether-4ca9a.firebaseio.com/"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <div id="divControls">
+        <input type="radio" name="geomType" id="radPoint" value="Point" checked>Point</input><br>
+        <input type="radio" name="geomType" id="radLine" value="Line" disabled>Line</input><br>
+        <input type="radio" name="geomType" id="radPolygon" value="Polygon" disabled>Polygon</input><br>
+        <hr>
+        <input type="radio" name="drawType" id="radDraw" value="Draw" checked>Draw</input><br>
+        <input type="radio" name="drawType" id="radErase" value="Erase" disabled>Erase</input>
+        <hr>
+        <input type="button" id="btnEraseAll" value="Erase All" onclick="eraseAll();"></input>
+    </div>
+    <div id="map">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuPxtN-dQ-zkKb_j80P1PXpFOQ5Q2979w&sensor=false"></script>
+    <script src="/js/master.js" charset="utf-8"></script>
+</body>
+
+</html>
